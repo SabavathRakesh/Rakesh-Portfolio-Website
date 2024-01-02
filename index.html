@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portofolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c7c0ec90d6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/l2.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer & Competitive programmer</p>
+            <h1>Hi, I'm <span>Sabavath Rakesh Naik</span><br>From India</h1>
+        </div>
+    </div>
+</div>
+<!-----about---->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/pht.png">
+            </div>
+            <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>As a recent graduate with Bachelor's degree in Computer Science and Engineering from Indian Institute Of Information Technology, Tiruchirappalli, I am excited to embark on a challenging and rewarding career in IT industry. Eager to apply my academic knowledge, strong work ethic, and passion for software development, web development and frontend development to contribute positively to a dynamic team and company. 
+            </p>
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Projects And Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Programming Languages</span><br>Python, JavaScript, C</li>
+                    <li><span>Database</span><br>MySQL</li>
+                    <li><span>Frontend Development</span><br>HTML, CSS, Bootstrap</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>BTech Final Year Project (2022-2023)</span><br>Security Enhanacement in chit fund using Block chain Technology.<br>Providing security for chit funds systems using block chain.<br>Technologies used: Python, Solidity, Sepolia Ethereum Test Network,
+                        HTML, CSS, JavaScript</li>
+                    <li><span>Data Science Internship (2022)</span><br>Credit card fraud detection.<br>Detecting whether a transaction is fraud or legit.<br>Technologies used: Python, Data Science
+                        </li>
+                        <li><span>Tic Tac Toe Game</span><br>A web game designed by using Java Script, HTML and CSS.<br>Technologies used: Java Script, HTML, CSS
+                        </li>
+                        <li><span>Rock, Paper & Scissors Game</span><br>A web game designed by using Java Script, HTML and CSS.<br>Technologies used: Java Script, HTML, CSS
+                        </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2019-2023</span><br>Indian Institute Of Information Technology, Tiruchirappalli (BTech)<br>Computer Science and Eninering <br> CGPA: 7.11</li>
+                    <li><span>2017-2019</span><br>Sri Gaytri Jr Collge, Hyderabad (MPC) <br> Mathematics, Physics, Chemistry <br> Aggregate: 85.4%</li>
+                    <li><span>2017</span><br>ST. Agnes English Medium High School, Jadcherla (SSC) <br> CGPA: 8.3</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------services---->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Open To</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Software Development</h2>
+                <p>Enthusiastic and technically proficient recent graduate seeking an
+                    entry-level position in software development. Eager to kickstart a
+                    rewarding career in software engineering, I bring a strong foundation in
+                    programming, problem-solving, and a passion for creating innovative
+                    solutions.As a quick learner and team player, I am excited to collaborate
+                    on challenging projects, embrace new technologies.
+                     </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>As a recent graduate with a strong passion for web development and a
+                    solid foundation in coding, I am eager to kickstart my career as a web
+                    developer. My goal is to leverage my knowledge of HTML, CSS,
+                    JavaScript, and my commitment to creating user-friendly and visually
+                    appealing websites to contribute to a dynamic and innovative team. I am
+                    excited to learn and grow in a collaborative environment while
+                    delivering high-quality web solutions that meet both client and user
+                    needs.
+                </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop"></i>
+                <h2>Frontend Development</h2>
+                <p>Motivated and recent graduate seeking position as a Front-End
+                    Developer. Passionate about creating engaging and user-friendly web
+                    experiences, I have honed my skills in HTML, CSS, JavaScript, and
+                    front-end frameworks during my academic journey and personal
+                    projects. I am eager to apply my knowledge and creativity to contribute
+                    to dynamic web development projects. As a detail-oriented and
+                    collaborative team player, I am excited to work closely with designers
+                    and back-end developers to transform design concepts. I am committed
+                    to continuous learning and staying updated with the latest front-end
+                    technologies to deliver exceptional user experiences.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----portofolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/w1.png">
+                <div class="layer">
+                    <h3> Security enhancement in chit fund</h3>
+                    <p>Providing security for chit funds systems using block chain. <br> Click the below arrow to know more.</p>
+                    <a href="https://github.com/SabavathRakesh/Security-Enhancement-in-chit-fund-using-Block-Chain-technology" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div> 
+            </div>
+            <div class="work">
+                <img src="images/w2.png">
+                <div class="layer">
+                    <h3>Rock, Paper & Scissors Game</h3>
+                    <p>This is a web game developed by using Java Script, HTML and CSS.<br> Click the below arrow to know more.</p>
+                    <a href="https://github.com/SabavathRakesh/Rock-Paper-Scissors-Game-using-Java-Script-HTML-and-CSS" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/w3.png">
+                <div class="layer">
+                    <h3>Tic Tac Toe Game</h3>
+                    <p>This is a web game developed by using Java Script, HTML and CSS.<br> Click the below arrow to know more.</p>
+                    <a href="https://github.com/SabavathRakesh/Tic-Tac-Toe-game-using-JavaScript-HTML-CSS" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>srakeshnaik23@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>+91-6309702174</p>
+            <div class="social-icons">
+                <a href="https://github.com/SabavathRakesh" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/s-rakesh-naik-05584021a"target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com/rakesh__3" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/_sr_3_/ " target="_blank"><i class="fa-brands fa-instagram"></i></a>   
+            </div>
+            <a href="Resume/Sabavath Rakesh Naik.pdf" download class="btn btn2" onclick="window.open('Resume/Sabavath Rakesh Naik.pdf'); return false;">Download Resume</a>
+
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+
+        </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2024 Rakesh<i class="fa-solid fa-heart"></i> Personal Portfolio</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+
+
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxL7e3FxR7qhNFw_jIXellbecc91JJeG3OZiV_xho_-oatVd4aLBXeAhybuiZCWtYhW/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
